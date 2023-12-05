@@ -1,6 +1,8 @@
 package org.acme.model;
 
 
+import org.acme.enums.PositionEnum;
+
 import io.quarkus.hibernate.orm.panache.PanacheEntity;
 import jakarta.persistence.Entity;
 
@@ -10,7 +12,25 @@ public class Equipe extends PanacheEntity{
 
     private Long id;
     private String name;
-    // Outros campos e métodos getters/setters conforme necessário
+    private Integer note;
+    private PositionEnum position;
+
+
+    public Integer getNote() {
+        return note;
+    }
+
+    public void setNote(Integer note) {
+        this.note = note;
+    }
+
+    public PositionEnum getPosition() {
+        return position;
+    }
+
+    public void setPosition(PositionEnum position) {
+        this.position = position;
+    }
 
     public Long getId() {
         return id;
