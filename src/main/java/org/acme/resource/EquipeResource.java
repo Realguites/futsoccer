@@ -39,6 +39,12 @@ public class EquipeResource {
         equipeService.createEquipe(equipe);
     }
 
+    @POST
+    @Path("/list")
+    public void createEquipes(List<Equipe> equipe) {
+        equipeService.createEquipes(equipe);
+    }
+
     @PUT
     @Path("/{id}")
     public void updateEquipe(@PathParam("id") Long id, Equipe equipe) {

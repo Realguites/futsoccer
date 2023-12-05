@@ -18,6 +18,8 @@ dependencies {
     testImplementation 'io.quarkus:quarkus-junit5'
     testImplementation 'io.rest-assured:rest-assured'
     implementation 'javax.persistence:javax.persistence-api:2.2'
+    testImplementation 'io.quarkus:quarkus-bom:3.6.0'
+    implementation 'io.quarkus:quarkus-resteasy-reactive-jackson'
 
 }
 

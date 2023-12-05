@@ -28,6 +28,11 @@ public class EquipeService {
     }
 
     @Transactional
+    public void createEquipes(List<Equipe> equipes) {
+        equipeRepository.persist(equipes);
+    }
+
+    @Transactional
     public void updateEquipe(Long id, Equipe equipe) {
         Equipe existingEquipe = equipeRepository.findById(id);
         if (existingEquipe != null) {
